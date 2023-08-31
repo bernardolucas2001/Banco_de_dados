@@ -21,6 +21,6 @@ INSERT INTO agenda values("Luan","(66)997762123","Inglaterra"),
 
 select * from agenda;
 
-select count(*) AS "'QUANTIDADE DE RESISTROS" from agenda;
+select count(*) AS "'QUANTIDADE DE REGISTROS" from agenda;
 
 select concat(nome, " possui o telefone ", telefone, "e mora no endereço ", endereco) as "Informação" from agenda;
