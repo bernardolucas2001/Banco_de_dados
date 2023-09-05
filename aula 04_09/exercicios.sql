@@ -22,13 +22,13 @@ use exercicio_2_forma;
 #primária), Nome do Funcionário, Departamento e Endereço do Departamento,
 #determine se a tabela está em 2FN ou não, e forneça uma explicação.
 
-#R: A tabela Funcionários não estar de acordo com a 2 FN, pois tambem não está de acordo com a 1 FN, visto que o atributo Endereço do Departamento é multivalorado.Além disso, o atributo Endereço do Departamento é parcialmente dependente do Campo Departamento.
+#R: A tabela Funcionários não estar de acordo com a 2 FN, pois tambem não está de acordo com a 1 FN, visto que o atributo Endereço do Departamento é composto(onde a 1 FN pede que os campos sejam simples/atomicos).Além disso, o atributo Endereço do Departamento é parcialmente dependente do Campo Departamento, sendo que essa não é uma chave candidata.
 
 # Questão 4: .Suponha uma tabela "Cursos" com os seguintes atributos: Código do Curso (chave
 # primária), Nome do Curso, Professor e Departamento do Professor. Avalie se esta
 # tabela está em 2FN ou não e explique sua conclusão.
 
-#R: A tabela não estar na 2 FN, pois o atributo Departamento do Professor é dependente do campo Professor.
+#R: A tabela estar na 2FN, pois ela não possui nenhum tipo de dependecia.
 
 
 # Questão 5: Considere uma tabela "Pedidos" com os atributos: Número do Pedido (chave
@@ -42,4 +42,4 @@ use exercicio_2_forma;
 # (chave primária), Produto Vendido, Nome do Vendedor, Departamento do Vendedor e
 # Cidade do Cliente. Avalie se esta tabela está em 2FN ou não e explique por quê.
 
-#R: a tabela não está na 2 FN , pois os campos Nome do Vendedor . Nome do Vendedor e Departamento do vendedor são pendentes de outros campos. O idela seria a criação de 1 tabela Cliente e outra Vendedor para colocar esses campos.
+#R: a tabela não está na 2 FN , pois os campos Nome do Vendedor  e Departamento do vendedor são pendentes de outros campos que não é a chave primária(no caso, o Departamento do Vendedor é pendende do nome do vendedor, sendo que esse ultimo não é uma chave candidata). O ideal seria a criação de 1 tabela Cliente e outra Vendedor para colocar esses campos.
